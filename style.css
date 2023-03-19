@@ -132,6 +132,36 @@ a {
   margin-top: 3rem;
 }
 
+
+
+
+.in_view_animation_box_container {
+
+  margin-top: 3rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+.in_view_animation_box {
+
+
+  aspect-ratio: 1/1;
+  border: 1px solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-paragraph);
+  font-size: 2rem;
+}
+
+/* .scroll_linked_animation_box:nth-child(2) {
+
+  transform: translate(200px);
+} */
+
 .scroll_section {
 
   height: 500vh;

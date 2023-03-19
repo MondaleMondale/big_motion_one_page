@@ -42,6 +42,18 @@ scroll(
   { target: document.querySelector(".scroll_linked_rotation_box") }
 );
 
+// IN VIEW ANIMATION
+
+inView(".in_view_animation_box_container", (info) => {
+  document.querySelectorAll(".in_view_animation_box").forEach((each) => {
+    console.log("each", each);
+    animate(each, { x: [Math.floor(Math.random() * 2000), 0], backgroundColor: [null, `var(--color-palette${Math.ceil(Math.random() * 5)})`] }, { duration: 2 });
+  });
+  return () => {};
+});
+
+//
+//
 // SCROLL horisontal
 const items = document.querySelectorAll(".scroll_section li");
 scroll(
